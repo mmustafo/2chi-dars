@@ -187,21 +187,22 @@
 //    console.log("O'rtacha foiz:", avgPercent);
 //    console.log("Yangi massiv:", updatedStudents);
 
+// 19
 
-const students = [
-     { name: "Ali", percent: 80 },
-     { name: "Vali", percent: 90 },
-     { name: "Hasan", percent: 11 },
-     { name: "Husan", percent: 85 }
-   ];
-   for (let i=0; i<=students.length-1; i++){
-     if(students[i].percent>=70){
-         students[i].isPaced = true
-     }else{
-          students[i].isPaced=false
-     }
-   }
-   console.log(students);
+// const students = [
+//      { name: "Ali", percent: 80 },
+//      { name: "Vali", percent: 90 },
+//      { name: "Hasan", percent: 11 },
+//      { name: "Husan", percent: 85 }
+//    ];
+//    for (let i=0; i<=students.length-1; i++){
+//      if(students[i].percent>=70){
+//          students[i].isPaced = true
+//      }else{
+//           students[i].isPaced=false
+//      }
+//    }
+//    console.log(students);
 
 
 //  20 Necha kishi imtihondan o'tdi va necha kishi imtihonda o'ta olmadi shuni ham hisoblang.
