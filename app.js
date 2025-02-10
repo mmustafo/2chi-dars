@@ -108,6 +108,43 @@
 // console.log(obj2); 
 
 
+//  16 Quyidagi obyektdan destructing orqali barcha qiymatlarini oling.
+
+// const product = {
+//   name: "Iphone 14",
+//   company: {
+//     name: "Apple",
+//     price: "200 mlrd",
+//     founder: {
+//       firstName: "Steve",
+//       lastName: "Jobs",
+//       birthDate: 1950,
+//     },
+//   },
+// };
+
+// const product = {
+//      name: "Iphone 14",
+//      company: {
+//        name: "Apple",
+//        price: "200 mlrd",
+//        founder: {
+//          firstName: "Steve",
+//          lastName: "Jobs",
+//          birthDate: 1950,
+//        },
+//      },
+//    };
+   
+//    let [names, comp] = Object.values(product)
+//    let [nameI, price, founder] = Object.values(comp)
+//    let [firstName, lastName, birthDate] = Object.values(founder)
+//    console.log(names);
+//    console.log(birthDate);
+//    console.log(firstName);
+//    console.log(nameI);
+//    console.log(price);
+//    console.log(lastName);
 // 17 Quyidagi massivdagi barcha o'quvchilarni protcentlarining o'rtacha qiymatini toping, shuningdek, objectlarga quyidagi propertylarni qo'shib yangi massiv qaytaring.
 
 // const students = [
@@ -149,6 +186,22 @@
 //    });
 //    console.log("O'rtacha foiz:", avgPercent);
 //    console.log("Yangi massiv:", updatedStudents);
+
+
+const students = [
+     { name: "Ali", percent: 80 },
+     { name: "Vali", percent: 90 },
+     { name: "Hasan", percent: 11 },
+     { name: "Husan", percent: 85 }
+   ];
+   for (let i=0; i<=students.length-1; i++){
+     if(students[i].percent>=70){
+         students[i].isPaced = true
+     }else{
+          students[i].isPaced=false
+     }
+   }
+   console.log(students);
 
 
 //  20 Necha kishi imtihondan o'tdi va necha kishi imtihonda o'ta olmadi shuni ham hisoblang.
