@@ -60,7 +60,13 @@
 //   { name: "Dasturlash", grade: 5, kredit: 8 },
 //   { name: "Kibrxavfsizlik", grade: 4, kredit: 8 },
 // ];
-
+// let Fizika = 0
+// let Matematika = 0
+// let Tarix = 0
+// let Dasturlash = 0
+// let Kibrxavfsizlik = 0
+// let sum = 0
+// let hammas = 0
 // const grades = [
 //      { name: "Fizika", grade: 4, kredit: 6 },
 //      { name: "Matematika", grade: 5, kredit: 6 },
@@ -68,18 +74,22 @@
 //      { name: "Dasturlash", grade: 5, kredit: 8 },
 //      { name: "Kibrxavfsizlik", grade: 4, kredit: 8 },
 //    ];
-   
-//    function calculateGPA(grades) {
-//        let totalWeightedGrades = 0;
-//        let totalCredits = 0;
-//        for (let i = 0; i < grades.length; i++) {
-//            totalWeightedGrades += grades[i].grade * grades[i].kredit; 
-//            totalCredits += grades[i].kredit; 
-//        }
-//        return totalWeightedGrades / totalCredits; 
+//    for (let i=0; i<grades.length;i++){
+//     sum+=grades[i].kredit
+//     if(grades[i].name==="Fizika"){
+//       Fizika+=grades[i].grade*grades[i].kredit
+//     } else if (grades[i].name==="Matematika"){
+//       Matematika+=grades[i].grade*grades[i].kredit
+//     } else if(grades[i].name==="Tarix"){
+//       Tarix+=grades[i].grade*grades[i].kredit
+//     } else if(grades[i].name==="Dasturlash"){
+//       Dasturlash+=grades[i].grade*grades[i].kredit
+//     } else if (grades.name==="Kibrxavfsizlik"){
+//       Kibrxavfsizlik+=grades[i].grade*grades[i].kredit
+//     }
 //    }
-//    const gpa = calculateGPA(grades);
-//    console.log("GPA: ", gpa.toFixed(2));
+//    hammas+=Fizika+Matematika+Tarix+Dasturlash+Kibrxavfsizlik
+//    console.log(hammas/sum);
 
 // 14 const rightAnswers = { 1: "B", 2: "A", 3: "C", 4: "D", 5: "B", 6: "C", 7: "A", 8: 'D', 9: "A", 10: "B" };
 
@@ -99,13 +109,7 @@
 // const correctCount = countCorrectAnswers(rightAnswers, myAnswers);
 // console.log("Togri javoblar soni:", correctCount);
 
-// let obj2 = [];
-// const obj = { a: 2, b: 3, c: 4, d: 6 };
-// let values = Object.values(obj); 
-// for (let i = 0; i < values.length; i++) { 
-//     obj2.push(values[i] * 3);
-// }
-// console.log(obj2); 
+
 
 
 //  16 Quyidagi obyektdan destructing orqali barcha qiymatlarini oling.
@@ -146,46 +150,38 @@
 //    console.log(price);
 //    console.log(lastName);
 // 17 Quyidagi massivdagi barcha o'quvchilarni protcentlarining o'rtacha qiymatini toping, shuningdek, objectlarga quyidagi propertylarni qo'shib yangi massiv qaytaring.
-
+// let sum = 0
 // const students = [
 //      { name: "Ali", percent: 80 },
 //      { name: "Vali", percent: 90 },
 //      { name: "Hasan", percent: 70 },
 //      { name: "Husan", percent: 85 }
 //    ];
-//    const avgPercent =
-//      students.reduce((sum, student) => sum + student.percent, 0) / students.length;
-//    const updatedStudents = students.map(student => {
-//      return {
-//        ...student,
-//        status: student.percent >= 80 ? "Passed" : "Failed",
-//        bonus: student.percent >= 90 ? student.percent + 5 : student.percent
-//      };
-//    });
-//    console.log("O'rtacha foiz:", avgPercent);
-//    console.log("Yangi massiv:", updatedStudents);
+//    for (let i=0; i<students.length; i++){
+//     sum+=students[i].percent
+//    }
+//   console.log(sum/students.length);
 
-// 18
+// 18grade propertyga protcent 90-100 o'rtasida bo'lsa 5, 80-90 o'rtasida bo'lsa 4, 70-80 o'rtasida bo'lsa 3 bahoni, qolgan holatlarda 2 bahoni o'zlashtiring.
+// let sum = 0
+// let tort = 0
+// let uch = 0
 // const students = [
 //      { name: "Ali", percent: 80 },
 //      { name: "Vali", percent: 90 },
 //      { name: "Hasan", percent: 70 },
 //      { name: "Husan", percent: 85 }
 //    ];
-//    const avgPercent =
-//      students.reduce((sum, student) => sum + student.percent, 0) / students.length;
-//    const updatedStudents = students.map(student => {
-//      return {
-//        ...student,
-//        status: student.percent >= 80 ? "Passed" : "Failed",
-//        bonus: student.percent >= 90 ? student.percent + 5 : student.percent,
-//        grade: student.percent >= 90 ? 5 :
-//               student.percent >= 80 ? 4 :
-//               student.percent >= 70 ? 3 : 2
-//      };
-//    });
-//    console.log("O'rtacha foiz:", avgPercent);
-//    console.log("Yangi massiv:", updatedStudents);
+//    for (let i=0; i<students.length; i++){
+//       if(students[i].percent>=90&&students[i].percent<=100){
+//         sum++
+//       } else if (students[i].percent>=80&&students[i].percent<=90){
+//         tort++
+//       } else if (students[i].percent>=70&&students[i].percent<=80) {
+//         uch++
+//       }
+//    }
+//    console.log(`"ta" ${sum} "besh", "ta" ${tort} "tort" "ta" ${uch}"uch"`);
 
 // 19
 
@@ -223,7 +219,8 @@
 //   {
 //     name: "Jasur",
 //     protcent: 88,
-
+// let sum  = 0
+// let ot = 0
 // const pupils = [
 //      { name: "Elbek", protcent: 95 },
 //      { name: "Zafar", protcent: 78 },
@@ -232,6 +229,10 @@
 //    ];
 //    for (let i = 0; i < pupils.length; i++) {
 //      if (pupils[i].protcent >= 85) {
-//        console.log(pupils[i].name, pupils[i].protcent);
+//       sum++
+//      } else{
+//       ot++
 //      }
 //    }
+//    console.log(`"ota odi ${sum}, "ota olmadi ${ot}`);
+   
